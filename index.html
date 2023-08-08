@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>visdata</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js"></script>
+</head>
+<body>
+  <nav>
+    <button id="view-button">
+      {<span class="blue">Click here for other users</span>}
+    </button>
+  </nav>
+  <hr>
+
+  <div id="multi-user" class="box-container">
+      <h1 class="singe-row">Tap on a user to show more info</h1>
+  </div>
+
+  <div id="single-user">
+    <div class="card">
+      <div class="box">
+	<div class="large-brackets"><div class="yellow">{</div></div>
+	<img id="portrait" src=""></img>
+	<div class="large-brackets"><div class="yellow">}</div></div>
+      </div>
+      <div id="info-box">
+	<h1>User</h1>
+	{
+	<div class="pad-left">
+	  "<span class="red">name</span>": "<span class="blue" id="name"></span>",<br>
+	  "<span class="red">gender</span>": "<span class="blue" id="gender"></span>",<br>
+	  "<span class="red">dob</span>": "<span class="blue" id="dob"></span>"
+	</div>
+	}
+      </div>
+    </div>
+
+    <div class="box-container">
+      <div class="box">
+	<div>
+	  <h2>Location</h2>
+	  {
+	  <div class="pad-left">
+	    "<span class="red">street</span>": "<span class="blue" id="street"></span>",<br>
+	    "<span class="red">city</span>": "<span class="blue" id="city"></span>",<br>
+	    "<span class="red">state</span>": "<span class="blue" id="state"></span>",<br>
+	    "<span class="red">country</span>": "<span class="blue" id="country"></span>",<br>
+	    "<span class="red">coordinates</span>": "<span class="blue" id="coordinates"></span>",<br>
+	    "<span class="red">timezone</span>": "<span class="blue" id="timezone"></span>"
+	  </div>
+	  }
+	</div>
+      </div>
+      <div class="box">
+	<div>
+	  <h2>Contacts</h2>
+	  {
+	  <div class="pad-left">
+	    "<span class="red">email</span>": "<span class="blue" id="email"></span>",<br>
+	    "<span class="red">phone</span>": "<span class="blue" id="phone"></span>",<br>
+	    "<span class="red">cell</span>": "<span class="blue" id="cell"></span>"
+	  </div>
+	  }
+	</div>
+      </div>
+      <div class="box">
+	<div>
+	  <h2>Registration</h2>
+	  {
+	  <div class="pad-left">
+	    "<span class="red">id</span>": "<span class="blue" id="id"></span>",<br>
+	    "<span class="red">registration date</span>":
+	      "<span class="blue" id="registration-date"></span>",<br>
+	    "<span class="red">registration age</span>": "<span class="blue" id="registration-age"></span>"
+	  </div>
+	  }
+	</div>
+      </div>
+    </div>
+
+    <br><br>
+
+    <div class="box-container">
+      <div class="box">
+	<div>
+	  <h2>Login</h2>
+	  {
+	  <div class="pad-left">
+	    "<span class="red">uuid</span>": "<span class="blue" id="uuid"></span>",<br>
+	    "<span class="red">username</span>": "<span class="blue" id="username"></span>",<br>
+	    "<span class="red">password</span>": "<span class="blue" id="password"></span>",<br>
+	    "<span class="red">salt</span>": "<span class="blue" id="salt"></span>",<br>
+	    "<span class="red">md5</span>": "<span class="blue" id="md5"></span>",<br>
+	    "<span class="red">sha1</span>": "<span class="blue" id="sha1"></span>",<br>
+	    "<span class="red">sha256</span>": "<span class="blue" id="sha256"></span>"
+	  </div>
+	  }
+	</div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <hr>
+  <footer>
+    Powered by <a href=https://randomuser.me/>randomuser</a>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
+
